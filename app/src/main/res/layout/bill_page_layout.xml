@@ -6,13 +6,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/bill_page_layout"
+    style="@style/CustomLayout"
     tools:context="com.example.tagg8.youoweme.BillPage">
 
     <TextView
-        android:layout_width="345dp"
+        style="@style/CustomText"
+        android:layout_width="385dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="22dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
         android:id="@+id/tv_bill_breakdown"
         android:text="YouOweMe Bill Breakdown: "
         android:textSize="24dp"/>
