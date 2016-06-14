@@ -67,7 +67,7 @@ public class BillPage extends Activity {
         Log.v("WorkpriceMap Size: ", String.valueOf(workPriceMap.size()));
         tvBillMap = new TextView[workPriceMap.size() * 2];
 
-        View linearLayout = findViewById(R.id.bill_page_layout);
+        View linearLayout = findViewById(R.id.bill_page_items);
 
         int i = 0;
         Iterator myVeryOwnIterator = workPriceMap.keySet().iterator();
