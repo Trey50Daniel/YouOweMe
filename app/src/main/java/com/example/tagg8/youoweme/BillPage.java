@@ -97,7 +97,6 @@ public class BillPage extends Activity {
             //tvBillMap[i].bringToFront();
             //tvBillMap[i + 1].bringToFront();
             i++;
-            System.out.println(i);
         }
 
 
@@ -118,9 +117,6 @@ public class BillPage extends Activity {
         ((LinearLayout)linearLayout).addView(tvTotalVal);
 
 
-        //tv.setLayoutParams(lparams);
-        //tv.setText("test");
-        //this.bill_page_layout.addView(tv);
 
 
         btnTakeScreenshot = (Button)findViewById(R.id.btnTakeScreenshot);
@@ -210,38 +206,4 @@ public class BillPage extends Activity {
         rootView.draw(canvas);
         return bitmap;
     }
-
-    /*
-    public void screenShot(View view) {
-        mbitmap = getBitmapOFRootView(btnTakeScreenshot);
-        imageView.setImageBitmap(mbitmap);
-        createImage(mbitmap);
-    }
-
-    public Bitmap getBitmapOFRootView(View v) {
-        View rootview = v.getRootView();
-        rootview.setDrawingCacheEnabled(true);
-        Bitmap bitmap1 = rootview.getDrawingCache();
-        return bitmap1;
-    }
-
-    public void createImage(Bitmap bmp) {
-        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-        bmp.compress(Bitmap.CompressFormat.JPEG, 40, bytes);
-        File file = new File(Environment.getExternalStorageDirectory() +
-                "/capturedscreenandroid.jpg");
-        try {
-            file.createNewFile();
-            FileOutputStream outputStream = new FileOutputStream(file);
-            outputStream.write(bytes.toByteArray());
-            outputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
-
-    //tv.setText(parent.getItemAtPosition(pos).toString() + "Planet is Selected");
-    //setContentView(tv);
-    //Intent intent = getIntent();
-    //Hashtable<String, String> workPriceMap = (Hashtable<String, String>) intent.getSerializableExtra("workPriceMap");
 }
